@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃연습1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.9.0.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script2.js"></script>
+</head>
+<body>
+    <div class="pop">
+        <img src="./images/pop.jpg" alt="팝업">
+        <button>닫기</button>
+    </div>
+    <div id="wrap">
+        <header id="header" class="cf">
+            <h1 class="logo">
+                <span class="hidden">로고</span>
+                <img src="./images/logo.png" alt="로고">
+            </h1>
+            <nav class="nav">
+                <ul class="cf">
+                    <li><a href="#">상의</a>
+                        <ul class="sub">
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">티셔츠</a></li>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">민소매</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">하의</a>
+                        <ul class="sub">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">반바지</a></li>
+                            <li><a href="#">면바지</a></li>
+                            <li><a href="#">치마</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">신발</a>
+                        <ul class="sub">
+                            <li><a href="#">운동화</a></li>
+                            <li><a href="#">슬리퍼</a></li>
+                            <li><a href="#">샌들</a></li>
+                            <li><a href="#">구두</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="sub">
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">귀걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">모자</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </header>
+        <section id="banner">
+            <h2 class="hidden">이미지 슬라이드</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/banner1.jpg" alt="배너1">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/banner2.jpg" alt="배너2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/banner3.jpg" alt="배너3">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="contents" class="cf">
+            <article class="content1 cf">
+                <h3 class="hidden">공지사항</h3>
+                <ul class="tab cf">
+                    <li class="active tab1"><a href="#">공지사항</a></li>
+                    <li class="tab2"><a href="#">갤러리</a></li>
+                </ul>
+                <div class="tab_con cf">
+                    <div class="board">
+                        <ul>
+                            <li class="popup">
+                               <a href="#">5. 12월 jsut쇼핑몰 세일안내!</a>
+                               <span>2022-11-02</span> 
+                            </li>
+                            <li>
+                                <a href="#">4. 10월 jsut쇼핑몰 세일안내!</a>
+                                <span>2022-10-30</span> 
+                            </li>
+                            <li>
+                                <a href="#">3. 10월 jsut쇼핑몰 세일안내!</a>
+                                <span>2022-10-30</span> 
+                            </li>
+                            <li>
+                                <a href="#">2. 10월 jsut쇼핑몰 세일안내!10월 jsut쇼핑몰 세일안내!10월 jsut쇼핑몰 세일안내!</a>
+                                <span>2022-10-30</span> 
+                            </li>
+                            <li>
+                                <a href="#">1. 10월 jsut쇼핑몰 세일안내!10월 jsut쇼핑몰 세일안내!</a>
+                                <span>2022-10-30</span> 
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="./images/gallery1.jpg" alt="gallery1"></a></li>
+                            <li><a href="#"><img src="./images/gallery2.jpg" alt="gallery2"></a></li>
+                            <li><a href="#"><img src="./images/gallery3.jpg" alt="gallery3"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="content2">
+                <h3 class="hidden">갤러리</h3>
+                <figure>
+                    <img src="./images/event_banner.jpg" alt="이벤트배너">
+                </figure>
+            </article>
+            <article class="content3">
+                <h3 class="hidden">팝업</h3>
+                <div class="banner_wrap">
+                    <a href="#"><img src="./images/go_1.jpg" alt="할인정보"></a>
+                    <a href="#"><img src="./images/go_2.jpg" alt="이벤트정보"></a>
+                    <a href="#"><img src="./images/go_3.jpg" alt="고객정보"></a>
+                </div>
+            </article>
+        </section>
+        <footer id="footer" class="cf">
+            <div class="footer1">
+                <h3 class="hidden">하단로고</h3>
+                <img src="./images/logo_b.png" alt="하단로고">
+            </div>
+            <div class="footer2">
+                <h3 class="hidden">카피라이트</h3>
+                <address>
+                    <ul class="copy">
+                        <li>서울시 마포구 홍익로 29(서교동,동교빌딩) jsut쇼핑몰</li>
+                        <li>Copyright &copy; jsut쇼핑몰 All right reserved.</li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer3">
+                <h3 class="hidden">sns</h3>
+                <ul class="sns">
+                    <li><a href="#"><img src="./images/twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./images/youtube.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
